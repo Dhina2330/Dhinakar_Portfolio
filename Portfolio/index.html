@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,9 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -86,8 +89,8 @@
             opacity: 0.05;
             z-index: -1;
             background-image:
-                linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+                linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
             background-size: 45px 45px;
         }
 
@@ -128,7 +131,7 @@
             border: 1px solid var(--card-border);
             backdrop-filter: blur(20px);
             border-radius: 20px;
-            box-shadow: 0 10px 50px rgba(0,0,0,.25);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, .25);
         }
 
         .logo {
@@ -200,6 +203,7 @@
                 opacity: 0;
                 transform: perspective(1000px) rotateY(8deg) translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: perspective(1000px) rotateY(0) translateY(0);
@@ -254,7 +258,7 @@
 
         .tilt-card:hover {
             transform: translateY(-10px) rotateX(3deg) rotateY(-3deg);
-            box-shadow: 0 25px 70px rgba(56,189,248,.15);
+            box-shadow: 0 25px 70px rgba(56, 189, 248, .15);
         }
 
         /* =========================================
@@ -276,22 +280,22 @@
         .btn-primary {
             color: white;
             background: var(--gradient);
-            box-shadow: 0 10px 30px rgba(56,189,248,.2);
+            box-shadow: 0 10px 30px rgba(56, 189, 248, .2);
         }
 
         .btn-primary:hover {
             transform: translateY(-4px);
-            box-shadow: 0 18px 35px rgba(139,92,246,.3);
+            box-shadow: 0 18px 35px rgba(139, 92, 246, .3);
         }
 
         .btn-secondary {
             color: white;
-            background: rgba(255,255,255,.07);
+            background: rgba(255, 255, 255, .07);
             border: 1px solid var(--card-border);
         }
 
         .btn-secondary:hover {
-            background: rgba(255,255,255,.14);
+            background: rgba(255, 255, 255, .14);
             transform: translateY(-4px);
         }
 
@@ -313,8 +317,8 @@
             gap: 8px;
             padding: 9px 15px;
             border-radius: 50px;
-            background: rgba(56,189,248,.1);
-            border: 1px solid rgba(56,189,248,.2);
+            background: rgba(56, 189, 248, .1);
+            border: 1px solid rgba(56, 189, 248, .2);
             color: var(--blue);
             font-size: .8rem;
             margin-bottom: 22px;
@@ -358,7 +362,7 @@
             height: 420px;
             position: absolute;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(56,189,248,.25), rgba(139,92,246,.08), transparent 70%);
+            background: radial-gradient(circle, rgba(56, 189, 248, .25), rgba(139, 92, 246, .08), transparent 70%);
             animation: pulse 4s infinite;
         }
 
@@ -378,8 +382,15 @@
         }
 
         @keyframes float {
-            0%,100% { transform: translateY(0); }
-            50% { transform: translateY(-16px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-16px);
+            }
         }
 
         .profile-card img {
@@ -397,9 +408,9 @@
             left: 30px;
             right: 30px;
             padding: 14px;
-            background: rgba(5,8,22,.7);
+            background: rgba(5, 8, 22, .7);
             backdrop-filter: blur(15px);
-            border: 1px solid rgba(255,255,255,.12);
+            border: 1px solid rgba(255, 255, 255, .12);
             border-radius: 15px;
         }
 
@@ -425,7 +436,7 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
@@ -508,7 +519,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
             gap: 22px;
         }
 
@@ -527,7 +538,7 @@
             border-radius: 18px;
             font-size: 1.5rem;
             color: var(--blue);
-            background: rgba(56,189,248,.1);
+            background: rgba(56, 189, 248, .1);
             margin-bottom: 20px;
         }
 
@@ -545,7 +556,7 @@
             position: absolute;
             width: 150px;
             height: 150px;
-            border: 1px solid rgba(56,189,248,.2);
+            border: 1px solid rgba(56, 189, 248, .2);
             border-radius: 50%;
             right: -60px;
             bottom: -60px;
@@ -553,7 +564,9 @@
         }
 
         @keyframes rotate {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* =========================================
@@ -562,7 +575,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
@@ -578,7 +591,7 @@
             display: grid;
             place-items: center;
             background:
-                radial-gradient(circle at 50% 50%, rgba(56,189,248,.25), transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(56, 189, 248, .25), transparent 40%),
                 linear-gradient(135deg, #101936, #160f35);
         }
 
@@ -598,10 +611,28 @@
             box-shadow: 0 0 20px var(--blue);
         }
 
-        .node:nth-child(1) { top: 10px; left: 80px; }
-        .node:nth-child(2) { top: 70px; left: 10px; background: var(--purple); }
-        .node:nth-child(3) { top: 70px; right: 10px; background: var(--pink); }
-        .node:nth-child(4) { bottom: 10px; left: 80px; background: var(--green); }
+        .node:nth-child(1) {
+            top: 10px;
+            left: 80px;
+        }
+
+        .node:nth-child(2) {
+            top: 70px;
+            left: 10px;
+            background: var(--purple);
+        }
+
+        .node:nth-child(3) {
+            top: 70px;
+            right: 10px;
+            background: var(--pink);
+        }
+
+        .node:nth-child(4) {
+            bottom: 10px;
+            left: 80px;
+            background: var(--green);
+        }
 
         .project-books {
             font-size: 5rem;
@@ -634,8 +665,8 @@
             padding: 6px 10px;
             border-radius: 50px;
             font-size: .7rem;
-            background: rgba(56,189,248,.09);
-            border: 1px solid rgba(56,189,248,.15);
+            background: rgba(56, 189, 248, .09);
+            border: 1px solid rgba(56, 189, 248, .15);
             color: var(--blue);
         }
 
@@ -643,8 +674,8 @@
             margin: 18px 0;
             padding: 16px;
             border-radius: 15px;
-            background: linear-gradient(135deg, rgba(56,189,248,.12), rgba(139,92,246,.12));
-            border: 1px solid rgba(56,189,248,.2);
+            background: linear-gradient(135deg, rgba(56, 189, 248, .12), rgba(139, 92, 246, .12));
+            border: 1px solid rgba(56, 189, 248, .2);
         }
 
         .accuracy span {
@@ -715,12 +746,12 @@
         }
 
         /* =========================================
-           CERTIFICATIONS
-        ========================================= */
+   CERTIFICATIONS
+========================================= */
 
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
@@ -750,9 +781,31 @@
             color: var(--muted);
         }
 
+
         /* =========================================
-           ACHIEVEMENT
-        ========================================= */
+   CERTIFICATION CATEGORY TITLES
+========================================= */
+
+        .category-title {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 35px;
+        }
+
+        .category-title p {
+            color: var(--blue);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .category-title h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+
+
+        /* =========================================
+   ACHIEVEMENT
+========================================= */
 
         .achievement-box {
             max-width: 800px;
@@ -803,7 +856,7 @@
             margin-bottom: 20px;
         }
 
-        .contact-info > p {
+        .contact-info>p {
             color: var(--muted);
             line-height: 1.8;
         }
@@ -822,7 +875,7 @@
             place-items: center;
             border-radius: 12px;
             color: var(--blue);
-            background: rgba(56,189,248,.1);
+            background: rgba(56, 189, 248, .1);
         }
 
         .contact-item span {
@@ -843,7 +896,7 @@
         .form-group textarea {
             width: 100%;
             padding: 14px 16px;
-            background: rgba(255,255,255,.05);
+            background: rgba(255, 255, 255, .05);
             border: 1px solid var(--card-border);
             color: white;
             border-radius: 12px;
@@ -855,7 +908,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             border-color: var(--blue);
-            box-shadow: 0 0 0 3px rgba(56,189,248,.08);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, .08);
         }
 
         textarea {
@@ -870,7 +923,7 @@
         footer {
             text-align: center;
             padding: 30px 20px;
-            border-top: 1px solid rgba(255,255,255,.08);
+            border-top: 1px solid rgba(255, 255, 255, .08);
             color: var(--muted);
             font-size: .8rem;
         }
@@ -888,7 +941,7 @@
             display: grid;
             place-items: center;
             border-radius: 50%;
-            background: rgba(255,255,255,.07);
+            background: rgba(255, 255, 255, .07);
             transition: .3s;
         }
 
@@ -910,7 +963,7 @@
                 width: 100%;
                 flex-direction: column;
                 padding: 25px;
-                background: rgba(5,8,22,.97);
+                background: rgba(5, 8, 22, .97);
                 backdrop-filter: blur(20px);
                 display: none;
                 border-radius: 20px;
@@ -982,6 +1035,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
+
             *,
             *::before,
             *::after {
@@ -1197,6 +1251,21 @@
                     </div>
                 </div>
 
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="education-card glass tilt-card">
+                        <p class="year">2020 - 2021</p>
+
+                        <h3>Secondary School Leaving Certificate</h3>
+
+                        <p><strong>Government Higher Secondary School</strong></p>
+                        <p>Tiruppur District, Tamil Nadu</p>
+                        <p>SSLC: <strong style="color:var(--blue)">Pass</strong></p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -1324,9 +1393,7 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://github.com/Dhina2330"
-                               target="_blank"
-                               class="btn btn-primary">
+                            <a href="https://github.com/Dhina2330" target="_blank" class="btn btn-primary">
                                 <i data-lucide="github" size="17"></i>
                                 View GitHub
                             </a>
@@ -1360,9 +1427,7 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://github.com/Dhina2330"
-                               target="_blank"
-                               class="btn btn-primary">
+                            <a href="https://github.com/Dhina2330" target="_blank" class="btn btn-primary">
                                 <i data-lucide="github" size="17"></i>
                                 View GitHub
                             </a>
@@ -1428,6 +1493,18 @@
                     </ul>
                 </div>
 
+                <div class="experience-card glass tilt-card">
+                    <h3>Ethical Hacking Virtual Intern</h3>
+                    <p class="company">EduSkills Academy - AICTE</p>
+                    <span class="date">OCTOBER 2025 - DECEMBER 2025</span>
+
+                    <ul>
+                        <li>Successfully completed a 10-week Ethical Hacking Virtual Internship.</li>
+                        <li>Gained practical knowledge in ethical hacking and cybersecurity concepts.</li>
+                        <li>Completed the virtual internship program supported by EduSkills Academy.</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
@@ -1440,9 +1517,11 @@
     <section class="page" id="certifications">
         <div class="container">
 
+            <!-- ================= PROFESSIONAL CERTIFICATIONS ================= -->
+
             <div class="section-title">
-                <p>Continuous Learning</p>
-                <h2>My <span class="gradient-text">Certifications</span></h2>
+                <p>Achievements & Learning</p>
+                <h2>Professional <span class="gradient-text">Certifications</span></h2>
             </div>
 
             <div class="cert-grid">
@@ -1451,36 +1530,258 @@
                     <div class="cert-icon">
                         <i data-lucide="award"></i>
                     </div>
-
                     <h3>Cyber Security and Privacy</h3>
                     <p>NPTEL</p>
                     <small>Professional Certification</small>
                 </div>
 
-
                 <div class="cert-card glass tilt-card">
                     <div class="cert-icon">
                         <i data-lucide="cloud"></i>
                     </div>
-
                     <h3>Google Cloud Data Analytics</h3>
                     <p>Google</p>
                     <small>Cloud & Data Analytics Certification</small>
                 </div>
 
-
                 <div class="cert-card glass tilt-card">
                     <div class="cert-icon">
                         <i data-lucide="shield"></i>
                     </div>
-
                     <h3>Google Cloud Cybersecurity</h3>
                     <p>Google</p>
                     <small>Cybersecurity Certification</small>
                 </div>
 
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="cloud"></i>
+                    </div>
+                    <h3>Oracle Cloud Infrastructure 2025 Foundations Associate</h3>
+                    <p>Oracle</p>
+                    <small>Professional Cloud Certification</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
+                    <p>Oracle</p>
+                    <small>Artificial Intelligence Certification</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Cyber Security by Google</h3>
+                    <p>Naan Mudhalvan - Google</p>
+                    <small>Cybersecurity Certificate of Achievement</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3>Master Data Management for Beginners</h3>
+                    <p>TCS iON</p>
+                    <small>Data Management Certification</small>
+                </div>
+
             </div>
-        </div>
+
+
+            <!-- ================= JOB SIMULATIONS ================= -->
+
+            <div class="category-title">
+                <p>Practical Experience</p>
+                <h2>Job <span class="gradient-text">Simulations</span></h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <h3>Software Engineering Job Simulation</h3>
+                    <p>Accenture - Forage</p>
+                    <small>Professional Job Simulation</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Cyber Job Simulation</h3>
+                    <p>Deloitte - Forage</p>
+                    <small>Cybersecurity Job Simulation</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Cybersecurity Analyst Job Simulation</h3>
+                    <p>TATA - Forage</p>
+                    <small>Cybersecurity Professional Simulation</small>
+                </div>
+
+            </div>
+
+
+            <!-- ================= COURSES ================= -->
+
+            <div class="category-title">
+                <p>Skill Development</p>
+                <h2>Online <span class="gradient-text">Courses</span></h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <h3>Foundations of Programming with Python</h3>
+                    <p>ExcelR</p>
+                    <small>30 Hours Live Training Program</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Vibe Coding with Gen AI</h3>
+                    <p>ExcelR</p>
+                    <small>Generative AI Training Program</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Introduction to Generative AI Studio</h3>
+                    <p>Google Cloud - Simplilearn SkillUp</p>
+                    <small>Generative AI Course Completion</small>
+                </div>
+
+            </div>
+
+
+            <!-- ================= WORKSHOPS ================= -->
+
+            <div class="category-title">
+                <p>Hands-On Learning</p>
+                <h2>Technical <span class="gradient-text">Workshops</span></h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>AI Based Gesture Recognition in Embedded Systems</h3>
+                    <p>Indian Info Tech</p>
+                    <small>AI & Embedded Systems Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="image"></i>
+                    </div>
+                    <h3>Digital Image Processing using MATLAB</h3>
+                    <p>Indian Info Tech</p>
+                    <small>Image Processing Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="scan-search"></i>
+                    </div>
+                    <h3>Object Detection using AI</h3>
+                    <p>Indian Info Tech</p>
+                    <small>Artificial Intelligence Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h3>License Plate Recognition using AI</h3>
+                    <p>Indian Info Tech</p>
+                    <small>Computer Vision & AI Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3>Roadmap to a Career in Full Stack Development</h3>
+                    <p>GUVI</p>
+                    <small>Full Stack Development Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="monitor-cog"></i>
+                    </div>
+                    <h3>Working Flow of PC Hardware and Devices</h3>
+                    <p>Draupathi IT Solutions</p>
+                    <small>Computer Hardware Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>CodeBind Technologies</p>
+                    <small>One Day AI Workshop</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Ignite Bootcamp - Venture Idea Development</h3>
+                    <p>Wadhwani Global</p>
+                    <small>Innovation & Entrepreneurship Program</small>
+                </div>
+
+            </div>
+
+
+            <!-- ================= EVENTS ================= -->
+
+            <div class="category-title">
+                <p>Technical Participation</p>
+                <h2>Events & <span class="gradient-text">Achievements</span></h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="briefcase-business"></i>
+                    </div>
+                    <h3>EBPL</h3>
+                    <p>Naan Mudhalvan - Adroit Technologies</p>
+                    <small>Certificate of Achievement</small>
+                </div>
+
+                <div class="cert-card glass tilt-card">
+                    <div class="cert-icon">
+                        <i data-lucide="presentation"></i>
+                    </div>
+                    <h3>Paper Presentation - DAKSHAA'26</h3>
+                    <p>K.S. Rangasamy College of Technology</p>
+                    <small>National Level Technical Event</small>
+                </div>
+
+            </div>
     </section>
 
 
@@ -1586,9 +1887,7 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea id="message"
-                            placeholder="Write your message..."
-                            required></textarea>
+                        <textarea id="message" placeholder="Write your message..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">
@@ -1689,7 +1988,7 @@
 
         navLinks.forEach(link => {
 
-            link.addEventListener("click", function(event) {
+            link.addEventListener("click", function (event) {
 
                 event.preventDefault();
 
@@ -1706,7 +2005,7 @@
            LOAD PAGE FROM URL HASH
         ========================================= */
 
-        window.addEventListener("load", function() {
+        window.addEventListener("load", function () {
 
             const pageId = window.location.hash.replace("#", "");
 
@@ -1719,7 +2018,7 @@
         });
 
 
-        window.addEventListener("hashchange", function() {
+        window.addEventListener("hashchange", function () {
 
             const pageId = window.location.hash.replace("#", "");
 
@@ -1749,7 +2048,7 @@
         const menuBtn = document.getElementById("menuBtn");
         const navMenu = document.getElementById("navLinks");
 
-        menuBtn.addEventListener("click", function() {
+        menuBtn.addEventListener("click", function () {
             navMenu.classList.toggle("show");
         });
 
@@ -1762,7 +2061,7 @@
 
         if (window.innerWidth > 768) {
 
-            document.addEventListener("mousemove", function(event) {
+            document.addEventListener("mousemove", function (event) {
 
                 cursor.style.left = event.clientX + "px";
                 cursor.style.top = event.clientY + "px";
@@ -1775,13 +2074,13 @@
 
             interactiveElements.forEach(element => {
 
-                element.addEventListener("mouseenter", function() {
+                element.addEventListener("mouseenter", function () {
                     cursor.style.width = "35px";
                     cursor.style.height = "35px";
                     cursor.style.background = "rgba(56,189,248,.12)";
                 });
 
-                element.addEventListener("mouseleave", function() {
+                element.addEventListener("mouseleave", function () {
                     cursor.style.width = "18px";
                     cursor.style.height = "18px";
                     cursor.style.background = "transparent";
@@ -1800,7 +2099,7 @@
 
         document.querySelectorAll(".tilt-card").forEach(card => {
 
-            card.addEventListener("mousemove", function(event) {
+            card.addEventListener("mousemove", function (event) {
 
                 if (window.innerWidth < 768) return;
 
@@ -1833,7 +2132,7 @@
             });
 
 
-            card.addEventListener("mouseleave", function() {
+            card.addEventListener("mouseleave", function () {
 
                 card.style.transform =
                     "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
@@ -1865,7 +2164,7 @@
             const increment =
                 target / (duration / 16);
 
-            const interval = setInterval(function() {
+            const interval = setInterval(function () {
 
                 current += increment;
 
@@ -1893,7 +2192,7 @@
 
         document
             .getElementById("contactForm")
-            .addEventListener("submit", function(event) {
+            .addEventListener("submit", function (event) {
 
                 event.preventDefault();
 
@@ -2067,7 +2366,7 @@
         let mouseX = 0;
         let mouseY = 0;
 
-        document.addEventListener("mousemove", function(event) {
+        document.addEventListener("mousemove", function (event) {
 
             mouseX =
                 (event.clientX / window.innerWidth - 0.5) * 2;
@@ -2115,7 +2414,7 @@
 
         /* RESPONSIVE THREE.JS */
 
-        window.addEventListener("resize", function() {
+        window.addEventListener("resize", function () {
 
             camera.aspect =
                 window.innerWidth / window.innerHeight;
@@ -2132,4 +2431,5 @@
     </script>
 
 </body>
+
 </html>
